@@ -1,12 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./app.css"
+import Navigation from "./component/Navigation";
+import Main from "./component/Main"
+import Bio from "./component/Bio";
+function App(){
 
-function App() {
   return (
-    <div className="App">
-      <h1>this is a heading</h1>
+    <div>
+      <Navigation/>
+      <Main/>
+      <Bio/>
     </div>
   );
+
 }
 
 export default App;

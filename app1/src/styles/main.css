@@ -1,0 +1,18 @@
+.main_container{
+    font-size: 40px;
+    color:white;
+    text-align: center;
+    height:80vh;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png");
+}
+.heading1_main{
+    padding-top: 20vh;;
+}
+
+.main_container > h5{
+    font-size: 16px;
+    font-weight: 100;
+}
