@@ -2,6 +2,8 @@
 // javascript XMl => tags
 // only one Jsx can be returned from a componet
 
+import Counter from "./Components/Counter"
+
 // If you write js inside your JSx => use {}
 import InputContainer from "./Components/InputContainer"
 import TaskContainer from "./Components/TaskContainer"
@@ -11,10 +13,11 @@ function App(){
 
   return (
     <div style={styleObj}>
+      {/* <Counter/> */}
       <InputContainer/>
-      <TaskContainer/>
+      <TaskContainer/> 
       {/* {console.log("hello world")}
-      {console.log(styleObj)} */}
+      {console.log(styleObj)*/}
     </div>
     
     // document.createElement('h1')
