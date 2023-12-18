@@ -1,26 +1,27 @@
-import React, { useState } from 'react'
-
+import React  from 'react'
+import {useState} from 'react'
 const Counter = () => {
-    // let value =1;
-    const [value, setValue] = useState(1)
-  return (
-    <div style={{color:"white"}}>
-      <h1>Counter</h1>
-      <p style={{fontSize:"24px", marginLeft:"70px"}}>{value}</p>
-      <button  onClick={function(){
-        setValue(value+1)
-        console.log(value)
-        console.log("increment")
-      }}>
-        Increment
-    </button>
-      <button onClick={function(){
-        setValue(value -1)
-        console.log(value)
-        console.log("decrement")
-      }}>Decrement</button>
+  //let val = 1;
+  const [val,setVal ] = useState(1);
+  function incHandler(){
+    // val++;
+    setVal(val+1)
+    console.log(val);
+  }
+  function decHandler(){
+    // val++;
+    setVal(val-1)
+    console.log(val);
+  }
+
+   return (
+    <div>
+      <h1 style={{color:"white",fontSize:"70px",textAlign:"center"}}>Counter</h1>
+      <h2 style={{color:"white",fontSize:"70px",textAlign:"center"}}>{val}</h2>
+      <button style={{padding:"30px"}} onClick={incHandler}>Inc</button>
+      <button style={{padding:"30px"}} onClick={decHandler}>Dec</button>
     </div>
-  )
+   )
 }
 
 export default Counter
