@@ -3,9 +3,9 @@ import SingleTask from './SingleTask'
 
 let arr =["do some cooking",
         "read some books","go for a walk","do some exercise"] 
-const TaskContainer = () => {
+const TaskContainer = ({task}) => {
 
-
+  arr.push(task)
   // let obj = {key : "value", key2 :" value2" , key3 : "value3"}
 
   return (
