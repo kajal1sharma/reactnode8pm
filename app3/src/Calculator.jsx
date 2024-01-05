@@ -16,6 +16,12 @@ class Calculator extends React.Component{
     getNumber2=function(event){
         this.number2 = Number(event.target.value);
     }
+    componentDidMount(){
+        console.log("component has mounted")
+    }
+    componentDidUpdate(){
+        console.log("something has been updated in my my compoenet")
+    }
     render(){
         return (
             <div style={{backgroundColor:"pink", fontSize:"32px"}}>
@@ -32,7 +38,13 @@ class Calculator extends React.Component{
                     console.log(this.number2)
                   //  this.setState(this.state.result:(this.number1+this.number2));
                      this.setState({...this.state,result:(this.number1+this.number2)})
-                }}>Add</button>
+                }}>+</button>
+                <button onClick={()=>{
+                    console.log(this.number1)
+                    console.log(this.number2)
+                  //  this.setState(this.state.result:(this.number1+this.number2));
+                     this.setState({...this.state,result:(this.number1*this.number2)})
+                }}>*</button>
                <div>
                 <h3>Sum = </h3>
                 <p>{this.state.result}</p>
