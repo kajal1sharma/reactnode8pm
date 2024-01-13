@@ -1,4 +1,4 @@
-const initialState =[];
+const initialState =[{color:"red"},{color:"blue"},{color:"pink"}];
 const reducerHander = (state=initialState,action)=>{
 
     if(action.type==="PRODUCT_LIST"){
